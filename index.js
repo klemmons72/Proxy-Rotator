@@ -33,7 +33,7 @@ const Workout = mongoose.model('Workout', workoutSchema)
  */
 
 function proxyGenerator() {
-    const url = 'https://sslproxies.org/'
+    const url = 'https://coolproxies.com/proxy-list.php'
     let ipAddresses = []
     let portNumbers = []
     let randomNumbers = Math.floor(Math.random() * 100)
@@ -135,7 +135,7 @@ function requestHandler(query, newProxy) {
 //---------------------------------------------------//
 
 (async function () {
-    const PORT = 3000
+    const PORT = 8080
     const DB_URL = 'mongodb://localhost/allWodDb'
     const myQuery = 'hero'
     const numberOfRequests = 200
